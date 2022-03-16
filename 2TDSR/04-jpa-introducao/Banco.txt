@@ -1,0 +1,48 @@
+Banco, Tabela:
+
+TB_CLIENTE
+---
+cd_cliente number (PK) not null
+nm_cliente varchar2(80) not null
+ds_email varchar2(50)
+dt_cadastro timestamp not null
+st_ativo number
+vl_credito number
+dt_nascimento date
+fl_foto_cnh blob
+ds_genero varchar(40)
+
+Sequence: SQ_TB_CLIENTE (responsável por gerar a PK da tabela)
+
+Exercicio:
+
+TB_EMPRESA
+---
+cd_empresa number (PK) not null
+nm_empresa varchar2(100) not null
+nr_cnpj varchar2(20) not null
+ds_tipo varchar2(30), enum no java (Financeiro, Educacao, Saude, Etc..)
+dt_cadastro timestamp not null
+dt_fundacao date
+fl_contrato_social blob (arquivo pdf do contrato social da empresa)
+st_ativo number(1,0) (Boolean no java)
+
+Atributo Integer para a quantidade de funcionários, somente no Java.
+
+Sequence: SQ_TB_EMPRESA
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
